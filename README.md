@@ -17,6 +17,7 @@ This requires BAM files, so FASTQ files need to be processed the conventional wa
 For Chung Lab:
 HSC_/GMP_MA9+/-venetoclax with RiboLace
 1. Remove Linker MC+, UMIs, and T preceding RPF
-2. Remove spiked-in sequence (up to 60% of counts) CTGAGAAAGTAGAGCAAGAAGAAATAGAG
-3. Remove tRNA, rRNA, ncRNA
-4. STAR alignment
+2. Remove spiked-in sequence: CTGAGAAAGTAGAGCAAGAAGAAATAGAG (up to 60% of counts)
+3. Remove tRNA, rRNA, ncRNA contamination
+4. STAR alignment to transcriptome
+5. UMI deduplication on aligned BAM
